@@ -36,3 +36,13 @@ gem 'jquery-rails', '2.0.2'
 
 # To use debugger
 # gem 'debugger'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
+
+gem 'therubyracer'
+gem 'execjs'
+
+gem 'libv8', '~> 3.11.8'
+
