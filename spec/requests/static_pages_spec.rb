@@ -44,3 +44,15 @@ require 'spec_helper'
     end
   end
 
+  describe "Contact page " do
+    it "should have the content" do
+      visit '/static_pages/contact'
+      page.should have_selector('h1', :text => 'Contact Page')
+    end
+
+    it "should have the title" do
+      visit '/static_pages/contact'
+      page.should have_selector('title', :text => "Welcome to Dryzilla Technologies | Contact Page")
+    end
+  end
+
